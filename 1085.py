@@ -1,6 +1,8 @@
 import sys
 
-x, y, w, h = map(int, sys.stdin.readline().split())
+input = sys.stdin.readline
+
+x, y, w, h = map(int, input().split())
 
 arr = [x, y, w-x, h-y]
 

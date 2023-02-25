@@ -1,5 +1,7 @@
 import sys
 
+input = sys.stdin.readline
+
 def f(n):
     sum = n
     n = list(str(n))
@@ -9,7 +11,7 @@ def f(n):
         sum += int(n[i])
     return sum
 
-n = int(sys.stdin.readline())
+n = int(input())
 
 idx = 1000000000
 

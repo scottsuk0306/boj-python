@@ -1,6 +1,8 @@
 import sys
 
-a, b, v = map(int, sys.stdin.readline().split())
+input = sys.stdin.readline
+
+a, b, v = map(int, input().split())
 
 sum = v - a
 cnt = 1

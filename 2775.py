@@ -1,10 +1,12 @@
 import sys 
 
-t = int(sys.stdin.readline())
+input = sys.stdin.readline
+
+t = int(input())
 
 for _ in range(t):
-    floor = int(sys.stdin.readline())
-    n = int(sys.stdin.readline())
+    floor = int(input())
+    n = int(input())
 
     arr = [j for j in range(0, n+1)]
 

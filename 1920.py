@@ -1,21 +1,15 @@
 import sys
 
-n = int(sys.stdin.readline())
-arr = list(map(int, sys.stdin.readline().split()))
+input = sys.stdin.readline
 
-m = int(sys.stdin.readline())
-check = list(map(int, sys.stdin.readline().split()))
+n = int(input())
+arr = set(map(int, input().split()))
 
-count = [0 for i in range(m)]
+m = int(input())
+check = list(map(int, input().split()))
 
-for i in range(n):
-    for j in range(m):
-        if count[j]==1:
-            pass
-        
-        if arr[i]==check[j]:
-            count[j] += 1
-            break
-
-for i in range(m):
-    print(count[i])
+for i in check:
+    if i in arr:
+        print(1)
+    else:
+        print(0)

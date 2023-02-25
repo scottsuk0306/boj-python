@@ -1,6 +1,8 @@
 import sys
 
-arr = list(map(int, sys.stdin.readline().split()))
+input = sys.stdin.readline
+
+arr = list(map(int, input().split()))
 
 idx = 0
 

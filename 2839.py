@@ -1,6 +1,8 @@
 import sys
 
-n = int(sys.stdin.readline())
+input = sys.stdin.readline
+
+n = int(input())
 
 x = 10000
 y = 10000

@@ -1,6 +1,8 @@
 import sys
 
-n = int(sys.stdin.readline())
+input = sys.stdin.readline
+
+n = int(input())
 
 sum = 1
 cnt = 1

@@ -3,14 +3,14 @@ a = [0 for i in range(5)]
 while True:
     a = list(map(int, str(input())))
     
+    if a[0] == 0:
+        break
+
     cnt = 0
 
     for i in range(len(a)//2):
-        if a[i]==a[len(a)-i-1]:
+        if a[i] == a[len(a)-i-1]:
             cnt += 1
-    
-    if a[0]==0:
-        break
 
     if cnt != len(a)//2:
         print("no")

@@ -1,6 +1,8 @@
 import sys
 
-a = int(sys.stdin.readline())
+input = sys.stdin.readline
+ 
+a = int(input())
 
 for i in range(1, a+1):
     print(a+1-i)

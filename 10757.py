@@ -1,5 +1,7 @@
 import sys
 
-a, b = map(int, sys.stdin.readline().split())
+input = sys.stdin.readline
+
+a, b = map(int, input().split())
 
 print(a+b)
