@@ -1,16 +1,17 @@
 import sys
 
-n = int(sys.stdin.readline())
+input = sys.stdin.readline
+m = int(input())
 
-for _ in range(n):
-    h, w, n = map(int, sys.stdin.readline().split())
+for _ in range(m):
+    h, w, n = map(int, input().split())
 
-    if n%h==0:
+    if n % h == 0:
         a = h
     else:
-        a = n%h
+        a = n % h
     
-    if n%h==0:
+    if n % h == 0:
         b = n//h
     else:
         b = n//h + 1
