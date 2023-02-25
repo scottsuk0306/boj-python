@@ -15,5 +15,5 @@ for i in range(n):
 
 for i in range(len(arr1)):
     for j in range(len(arr1[i])):
-        print(arr1[i][j]+arr2[i][j], end=" ")
+        print(arr1[i][j] + arr2[i][j], end=" ")
     print()

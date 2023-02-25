@@ -4,19 +4,16 @@ input = sys.stdin.readline
 
 n = int(input())
 
-x = 10000
-y = 10000
-sum = x+y
+flag = False
 
 for i in range((n//3)+1):
-    if (n-3*i)%5==0:
+    if (n-3*i) % 5 == 0:
         x = (n-3*i)//5
         y = i
-    
-    if sum>x+y:
-        sum = x+y
+        flag = True
+        break
 
-if x+y==20000:
+if not flag:
     print("-1")
 else:
-    print(sum)
+    print(x+y)

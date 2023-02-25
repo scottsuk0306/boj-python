@@ -7,13 +7,13 @@ n = int(input())
 sum = 1
 cnt = 1
 
-if n==1: 
+if n == 1: 
     cnt = 1
 else:
     while True:
-        sum += cnt+1 + cnt*4 + cnt-1
+        sum += 6 * cnt
         cnt += 1
-        if n<=sum:
+        if n <= sum:
             break
         else:
             continue

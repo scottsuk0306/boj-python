@@ -9,7 +9,7 @@ for i in range(n, m+1):
     y = int(i**0.5)
     
     for j in range(2, y+1):
-        if i%j==0 and i!=j:
+        if i % j == 0:
             x = 0
             break
     

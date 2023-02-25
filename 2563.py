@@ -2,9 +2,10 @@ import sys
 
 input = sys.stdin.readline
 
+maxsize = 101
 n = int(input())
 
-arr = [[0 for i in range(101)] for j in range(101)]
+arr = [[0 for i in range(maxsize)] for j in range(maxsize)]
 cnt = 0
 
 for _ in range(n):
@@ -14,9 +15,9 @@ for _ in range(n):
         for j in range(b, b+10):
             arr[i][j] = 1
 
-for i in range(101):
-    for j in range(101):
-        if arr[i][j]==1:
+for i in range(maxsize):
+    for j in range(maxsize):
+        if arr[i][j] == 1:
             cnt += 1
 
 print(cnt)

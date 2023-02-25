@@ -13,14 +13,13 @@ def f(n):
 
 n = int(input())
 
-idx = 1000000000
+small = 1000000
 
 for i in range(n):   
-    if f(i)==n:
-        if idx>=i:
-            idx = i
+    if f(i) == n:
+        small = min(small, i)
 
-if idx == 1000000000:
+if small == 1000000:
     print(0)
 else:
-    print(idx)
+    print(small)

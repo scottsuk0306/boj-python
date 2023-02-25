@@ -2,18 +2,19 @@ import sys
 
 input = sys.stdin.readline
 
+grid = 9
 arr = []
 
-for i in range(9):
+for i in range(grid):
     arr.append(list(map(int, input().split())))
 
 max = arr[0][0]
 x = 0
 y = 0
 
-for i in range(9):
-    for j in range(9):
-        if max<arr[i][j]:
+for i in range(grid):
+    for j in range(grid):
+        if max < arr[i][j]:
             max = arr[i][j]
             x = i
             y = j

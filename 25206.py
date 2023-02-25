@@ -12,4 +12,4 @@ for _ in range(20):
         cnt += b
         sum += b * grade[rating.index(c)]
     
-print("%.6f" %(sum/cnt))
+print("%.6f" % (sum/cnt))
