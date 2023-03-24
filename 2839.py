@@ -7,8 +7,8 @@ n = int(input())
 flag = False
 
 for i in range((n//3)+1):
-    if (n-3*i) % 5 == 0:
-        x = (n-3*i)//5
+    if (n - 3 * i) % 5 == 0:
+        x = (n - 3 * i) // 5
         y = i
         flag = True
         break
